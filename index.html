@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f7f7f7;
+            padding:30px;
+        }
+
+        form{
+            max-width:500px;
+            margin:auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,.1);
+        }
+
+        input, textarea{
+            width:100%;
+            padding:12px;
+            margin-top:8px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            box-sizing:border-box;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            background:#0F9D58;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            background:#0b8043;
+        }
+    </style>
+</head>
+
+<body>
+
+<form action="https://formspree.io/f/mwvdkedd" method="POST">
+
+    <h2>Contact Us</h2>
+
+    <input
+        type="text"
+        name="name"
+        placeholder="Your name"
+        required>
+
+    <input
+        type="email"
+        name="email"
+        placeholder="Your email"
+        required>
+
+    <textarea
+        name="message"
+        rows="6"
+        placeholder="Your message"
+        required></textarea>
+
+    <button type="submit">
+        Send Message
+    </button>
+
+</form>
+
+</body>
+</html>
